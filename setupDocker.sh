@@ -18,7 +18,7 @@ docker run -d \
   -e MYSQL_PASSWORD=1234 \
   -v ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql \
   -v db_data:/var/lib/mysql \
-  -p 3306:3306 \
+  -p 3307:3306 \
   mariadb || { echo "Failed to start MariaDB container"; exit 1; }
 
 # Step 4: Run PHP container
